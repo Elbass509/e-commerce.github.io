@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {color: #000; font-size: 11px; text-align: center; margin-bottom: 20px;}
+    .attribution a { color: #000; padding-left: 2px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+      <header>
+        <nav>
+          <button class="menu menu1">
+            <img src="menu.png" alt="menu.png">
+          </button>
+         <div class="navigation">
+           <div class="nav-brand">
+             <h2>sneakers</h2>
+           </div>
+           <ul class="nav-list">
+             <button class="menu menu2">
+               <img src="cancel.png" alt="menu.png">
+             </button>
+             <li class="nav-items">
+               <a href="#">Collections</a>
+             </li>
+             <li class="nav-items">
+               <a href="#">Men</a>
+             </li>
+             <li class="nav-items">
+               <a href="#">Women</a>
+             </li>
+             <li class="nav-items">
+               <a href="#">About</a>
+             </li>
+             <li class="nav-items">
+               <a href="#">Contact</a>
+             </li>
+           </ul>
+         </div>
+         <div class="user blur">
+           <div class="cart-dropdown">
+            <button class="drop">
+              <img class="cart" src="shopping-cart.png"
+              alt="cart">
+           </button>
+             <img class="user-image" src="image-avatar.png" alt="image-avatar.png">
+           </div>
+         </div>
+        </nav>
+      </header>
+      <div class="dropbox">
+        <h3>Cart</h3>
+        <hr>
+        <p class="empty">You cart is empty</p>
+        <div class="item-container">
+
+        </div>
+         <button id="check">CHECKOUT</button>
+      </div>
+      <section class="lightbox">
+      <button class="closeBox">×</button>
+      <div class="caruosel">
+        <div class="lightEl item">
+          <img src="image-product-1.jpg"
+          alt="image-product-1.jpg">
+        </div>
+       <img src="image-product-2.jpg" alt="#"
+       class="item">
+       <img src="image-product-3.jpg" alt="#"
+       class="item">
+       <img src="image-product-4.jpg" alt="#"
+       class="item">
+      <div class="slide-nav">
+            <button class="prev nav-btn"><</button>
+            <button class="next nav-btn">></button>
+          </div>
+      </div>
+       <div class="image-navigator nav-2">
+         <button class="pro1">
+            <img src="image-product-1-thumbnail.jpg"
+          alt="image-product-1-thumbnail.jpg">
+         </button>
+         <button class="pro2">
+           <img src="image-product-2-thumbnail.jpg"
+          alt="image-product-2-thumbnail.jpg">
+         </button>
+         <button class="pro3">
+            <img src="image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail.jpg">
+         </button>
+          <button class="pro4">
+             <img src="image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail.jpg">
+          </button>
+        </div>
+  </section>
+  </div>
+
+   <section class="main">
+        <div class="normal-display">
+          <div class="gallery">
+          <div class="big">
+           <img src="image-product-1.jpg"
+           alt="image-product-1.jpg">
+          </div>
+          <div class="image-navigator">
+           <button class="product-1">
+              <img src="image-product-1-thumbnail.jpg"
+            alt="image-product-1-thumbnail.jpg">
+           </button>
+           <button class="product-2">
+             <img src="image-product-2-thumbnail.jpg"
+            alt="image-product-2-thumbnail.jpg">
+           </button>
+           <button class="product-3">
+              <img src="image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail.jpg">
+           </button>
+            <button class="product-4">
+               <img src="image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail.jpg">
+            </button>
+          </div>
+        </div>
+        <div class="info">
+          <p class="small">
+            SNEAKER COMPANY
+          </p>
+          <h2 class="bigger-text">Fall Limited Edition <br> Sneakers</h2>
+         <p>
+           These low-profile sneakers are your perfect casual wear<br>
+           comparison. Featuring a
+           durable rubber outer sole, they’ll <br>
+           withstand everything the weather can offer.
+         </p>
+         <div class="pricing">
+           <div class="price">
+             <h2>$125.00</h2>
+             <h3 class="cancelled"><s>$250.00</s></h3>
+           </div>
+           <h3 class="discount">50%</h3>
+         </div>
+         <div class="order">
+           <div class= "control">
+              <button class="order-btn reduce">-</button>
+              <input type="number" value="0" id="quantity">
+              <button class="order-btn increase">+</button>
+           </div>
+              <button class="to-cart"> <img class="cart2" src="add-to-cart.png"
+              alt="cart"> Add to Cart</button>
+          </div>
+        </div>
+
+      </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+    Coded by <a href="#">Lucky Elliot</a>.
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
